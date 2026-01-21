@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section {
+  position: relative;
+  z-index: 5;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px pink;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 80px 20px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 220px;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.photos img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* LETTER */
+.letter {
+  padding: 80px 40px;
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  margin: 50px;
+  border-radius: 30px;
+}
+
+/* SECRET */
+.secret button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+}
+
+#secretMessage {
+  display: none;
+  margin-top: 20px;
+}
+
+/* VIDEO */
+.video video {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+/* PROPOSAL */
+.proposal button {
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: 30px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+}
+
+/* SHARE */
+.share a {
+  padding: 15px 30px;
+  background: #25D366;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* ROSES */
+.rose {
+  position: fixed;
+  top: -10px;
+  font-size: 24px;
+  animation: fall linear infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* FIREWORKS */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+/* TEXT SPACING FIX */
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.timer h2,
+.timer #counter {
+  margin-bottom: 15px;
+}
+
+.video h2 {
+  margin-bottom: 25px;
+}
+
+.proposal h2 {
+  margin-bottom: 25px;
+}

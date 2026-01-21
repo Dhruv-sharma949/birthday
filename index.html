@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🎵 Music -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- 🎂 HERO -->
+<section class="hero">
+  <h1 id="typewriter"></h1>
+  <p class="subtitle">You are the reason my heart smiles 💖</p>
+</section>
+
+<!-- 📸 GALLERY -->
+<section class="gallery">
+  <h2>Our Memories 📸</h2>
+  <div class="photos">
+    <img src="photos/p1.jpg">
+    <img src="photos/p2.jpg">
+    <img src="photos/p3.jpg">
+  </div>
+</section>
+
+<!-- 💌 LETTER -->
+<section class="letter">
+  <h2>For You ❤️</h2>
+  <p>
+    From the day you came into my life, everything became brighter.
+    You are my happiness, my peace, my forever.  
+    Happy Birthday my love 💕
+  </p>
+</section>
+
+<!-- 💌 SURPRISE BUTTON -->
+<section class="secret">
+  <button onclick="revealMessage()">Tap for Surprise 💌</button>
+</section>
+
+<!-- ⏳ TIMER -->
+<section class="timer">
+  <h2>Our Love Since 💞</h2>
+  <div id="counter"></div>
+</section>
+
+<!-- 🎥 VIDEO (HIDDEN INITIALLY) -->
+<section class="video" id="videoSection" style="display:none;">
+  <h2>Our Story 🎥</h2>
+  <video controls autoplay muted loop>
+    <source src="videos/love.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- 💍 PROPOSAL -->
+<section class="proposal">
+  <h2>Will You Be Mine Forever? 💍</h2>
+  <button onclick="acceptProposal()">YES ❤️</button>
+  <button id="noBtn">NO 😜</button>
+  <p id="proposalAnswer"></p>
+</section>
+
+<!-- 🎆 BACKGROUND CANVAS -->
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
